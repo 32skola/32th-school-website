@@ -6,14 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="32th Logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="index.css">
     <title>მთავარი გვერდი </title>
     <style>
-      .fakeimg {
-        background-color: rgb(192, 192, 192);
+ @media only screen and (min-width:1000px) {
+  .fakeimg {
+        background-image: url('background.png');
         width: 100%;
-        height:350px;
+        height:500px;
+        background-repeat: no-repeat;
       }
+ }
+
+ @media only screen and (max-width:600px) {
+
+ .fakeimg {
+        background-image: url('background1.jpg');
+        width: 100%;
+        height:500px;
+        background-repeat: no-repeat;
+      }
+ }
 
       @media only screen and (min-width:500px) {
 
@@ -48,14 +62,22 @@ text-align: right;
 .article {
   background-color: whitesmoke;
   width: 90%;
-  height: 250px;
+  height: auto;
   border-radius: 10px;
+  text-align: left;
 }
 
+
 .currentprojects {
-  width: auto;
-  overflow-x: scroll;
+  margin-top: -2%;
+  background-color: rgb(226, 226, 226);
+  width: 90%;
+  height: auto;
 }
+
+
+
+
 
 
     </style>
@@ -85,51 +107,55 @@ text-align: right;
  <div class="fakeimg"></div>
  <div class="leftrow">
   <br>
- <center><h1>სკოლის გაზეთი</h1></center>
+ <center><h1>აქტივობები</h1></center>
  <center>
   <div class="article">
+    <img src="brainstormact.jpg" style="width: 100%;border-radius: 15px;">
+   <p>სსიპ ქ.თბილისის 32-ე საჯარო სკოლაში ჩატარდა ინტელექტუალური თამაში "BrainStorm" ,სადაც გაიმართა მოსწავლეებს შორის ინტელექტუალური შეჯიბრი.მონაწილეებმა მოისმინეს კითხვები და გასცეს მათ ლოგიკური პასუხები,საბოლოოდ კი გაიმარჯვა 10გ კლასმა,რომელიც დაჯილდოვდა თასითა და სიგელებით.დიდი მადლობა მათ, ვინც მიიღო მონაწილეობა თამაშში.</p>
+   <br>
+  </div>
+ </center>
+ <br>
+ <center>
+  <div class="article">
+    <img src="againstoccupation.jpg" style="width: 100%;border-radius: 15px;">
+    <p>ჩვენს სკოლაში ჩატარდა გამოფენა "ოკუპაცია დროებითია",რომლის ფარგლებშიც ჩვენი სკოლის მოსწავლეებმა შექმნეს არაერთი საინტერესო და ღრმა შინაარსის მქონე ნამუშევარი ოკუპაციის თემასთან დაკავშირებით.
+      რუსეთის ფედერაციამ საქართველოს ტერიტორიების ოკუპაცია დაიწყო მას შემდეგ, რაც ჩვენ რეფერენდუმის სახით მხარი დავუჭირეთ საქართველოს დამოუკიდებლობის აქტის აღდგენას და ამის შემდეგ ინტენსიურად მიმდინარეობს ჩვენი ტერიტორიების პირდაპირი თუ ირიბი ოკუპაცია.დღესდეობით, რუსეთს ოკუპირებული აქვს საქართველოს ტერიტორიების 20% და ის დღემდე განაგრძობს მცოცავ ოკუპაციას</p>
+    <br>
+  </div>
+ </center>
+ <br>
 
-  </div>
- </center>
- <br>
- <center>
-  <div class="article">
-    
-  </div>
- </center>
- <br>
- <center>
-  <div class="article">
-    
-  </div>
- </center>
- <br>
- <center>
-  <div class="article">
-    
-  </div>
- </center>
- <br>
- <center>
-  <div class="article">
-    
-  </div>
- </center>
- <br>
- <center>
-  <div class="article">
-    
-  </div>
- </center>
- <br>
  <br>
  </div>
  <div class="row">
-  <h1 style="margin-top: 5%;">მიმდინარე პროექტები
+  <h1 style="margin-top: 5%;">გალერია
   <hr>
   </h1>
   <br>
+<div class="currentprojects">
 
- </div>
+<div class="w3-content" style="max-width:400px;max-height: 350px;">
+  <img class="mySlides" src="picture 1.jpg" style="width:100%">
+
+  <img class="mySlides" src="picture 2.jpg" style="width:100%">
+
+  <img class="mySlides" src="picture 7.jpg" style="width:100%">
+
+  <img class="mySlides" src="picture 5.jpg" style="width:100%">
+
+</div>
+</div>
+<br>
+
+<br>
+  </div>
+  <br>
+
+  <br>
+
+<script src="script.js"></script>
+
+<br>
 </body>
 </html>
