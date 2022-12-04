@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="32th Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>მთავარი გვერდი</title>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">კლუბები
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="intelectualsclub.html">ინტელექტუალთა კლუბი</a>
+      <a href="booklovers.html">წიგნის მოყვარულთა კლუბი</a>
+      <a href="civicclub.html">სამოქალაქო განათლების კლუბი</a>
+      <a href="#">სამეწარმეო განათლების კლუბი</a>
+    </div>
+  </div>
+ <div class="right">
+  <a href="news.html">სიახლეები</a>
+  <a href="aboutus.html">ჩვენს შესახებ</a>
+ </div>
+  </div> 
+</div>
+<img src="background.png" style="width: 100%;">
+<div class="row">
+  <br>
+  <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <img src="picture 2.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="picture 5.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="picture 7.jpg" style="width:100%">
+    </div>
+
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
+</div>
+
+<div class="rowright">
+
+<center>
+  <div class="articlecard">
+<img src="brainstormact.jpg" style="width: 100%;border-radius: 15px;">
+    <p>სსიპ ქ.თბილისის 32-ე საჯარო სკოლაში ჩატარდა ინტელექტუალური თამაში "BrainStorm" ,სადაც გაიმართა მოსწავლეებს შორის ინტელექტუალური შეჯიბრი.მონაწილეებმა მოისმინეს კითხვები და გასცეს მათ ლოგიკური პასუხები,საბოლოოდ კი გაიმარჯვა 10გ კლასმა,რომელიც დაჯილდოვდა თასითა და სიგელებით.დიდი მადლობა მათ, ვინც მიიღო მონაწილეობა თამაშში.</p>
+   <br>
+  </div>
+</center>
+
+<center>
+  <div class="articlecard">
+<img src="againstoccupation.jpg" style="width: 100%;border-radius: 15px;">
+    <p>ჩვენს სკოლაში ჩატარდა გამოფენა "ოკუპაცია დროებითია",რომლის ფარგლებშიც ჩვენი სკოლის მოსწავლეებმა შექმნეს არაერთი საინტერესო და ღრმა შინაარსის მქონე ნამუშევარი ოკუპაციის თემასთან დაკავშირებით. რუსეთის ფედერაციამ საქართველოს ტერიტორიების ოკუპაცია დაიწყო მას შემდეგ, რაც ჩვენ რეფერენდუმის სახით მხარი დავუჭირეთ საქართველოს დამოუკიდებლობის აქტის აღდგენას და ამის შემდეგ ინტენსიურად მიმდინარეობს ჩვენი ტერიტორიების პირდაპირი თუ ირიბი ოკუპაცია.დღესდეობით, რუსეთს ოკუპირებული აქვს საქართველოს ტერიტორიების 20% და ის დღემდე განაგრძობს მცოცავ ოკუპაციას</p>
+   <br>
+  </div>
+</center>
+<br>
+<br>
+<footer>
+  
+</footer>
+</div>
+</body>
+</html>

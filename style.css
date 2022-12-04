@@ -1,0 +1,216 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  .right {
+   float:right;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color:#0d48ea;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width:370px) {
+    .navbar a {
+        float: left;
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+}
+
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  @media only screen and (max-width:370px) {
+      
+  .dropdown .dropbtn {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  }
+  
+  @media only screen and (min-width:600px) {
+    .dropdown .dropbtn {
+        font-size: 22px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .row {
+        width: 37%;
+        height: auto;
+        float: left;
+      }
+
+      .rowright {
+        width: 60%;
+        background-color: rgba(226, 226, 226, 0.37);
+        height: auto;
+        float: right;
+      }
+
+      .articlecard {
+        background-color: #d8d8d8b4;
+        height: auto;
+        text-align: left;
+        border-radius: 15px;
+        float: right;
+        width: 90%;
+        margin-right: 10%;
+        margin-top: 5%;
+      }
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(4, 0, 255);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#0d48ead8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+  @media only screen and (max-width:550px) {
+
+  .articlecard {
+    background-color: #dededeb4;
+    width: 95%;
+    height: auto;
+    text-align: left;
+    border-radius: 15px;
+    margin-top: 5%;
+  }
+
+  footer {
+    background-color: #0d48ea;
+    height: 80px;
+}
+  }
+
+
+  /*სლაიდშოუ*/
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:#0d48ea;;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color:#0e3191;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+@media only screen and (min-width:1000px) {
+    .form {
+        width: 70%;
+        float:right;
+    }
+
+    .row1 {
+        float: left;
+        width: 30%;
+    }
+}
+
