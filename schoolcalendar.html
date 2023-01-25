@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <title>სასკოლო კალენდარი</title>
+     <style>
+   ul {
+    margin-left: 3%;
+   }
+
+   h3 {
+    margin-left: 5%;
+   }
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 95%;
+    height: 300px;
+  }
+}
+
+iframe {
+    width: 95%;
+    height: 400px;
+  }
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 40%; 
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {   
+  -ms-flex: 60%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+     </style>
+    </head>
+<body>
+    <nav>
+        <a href="index.html"><button style="background-color: #0d48ea;border:none;height:100%;width: auto;color: whitesmoke;font-size: 140%;">&nbsp;&nbsp;მთავარი&nbsp;&nbsp;</button></a>
+    </nav>
+
+
+<div class="backgroundcard">
+  <img src="background.png" style="width: 100%;">
+</div>
+<div class="row">
+    <div class="side">
+        <h3>დასვენების დღეები</h3>
+        <ul>
+           <li>14 ოქტომბერი - სვეტიცხოვლობა</li>
+           <li>23 ნოემბერი - გიორგობა</li>
+           <li>7 იანვარი - შობა</li>
+           <li>19 იანვარი - ნათლისღება</li>
+           <li>3 მარტი - დედის დღე</li>
+           <li>8 მარტი - ქალთა საერთაშორისო დღე</li>
+           <li>9 აპრილი - საქართველოს სახელმწიფოებრივი დამოუკიდებლობის აღდგენის აქტის მიღების დღე, საქართველოს ეროვნული ერთიანობის, სამოქალაქო თანხმობისა და სამშობლოსათვის დაღუპულთა მოგონების დღე.</li>
+           <li>9 მაისი - ფაშიზმზე გამარჯვების დღე</li>
+           <li>12 მაისი - ანდრია პირველწოდებულის ხსენების დღე, ყოვლადწმინდა ღვთისმშობლისადმი საქართველოს წილხვდომილობის დღე.</li>
+           <li>26 მაისი - საქართველოს დამოუკიდებლობის დღე</li>
+        </ul>
+
+        <h3>ზამთრის არდადეგები</h3>
+        <ul>
+            <li>იწყება - 26 დეკემბერს</li>
+            <li>მთავრდება - 15 იანვარს</li>
+        </ul>
+
+        <h3>ზაფხულის არდადეგები</h3>
+        <ul>
+            <li>იწყება - 15 ივნისი</li>
+            <li>მთავრდება - 15 სექტემბერი</li>
+        </ul>
+    </div>
+    <div class="main">
+   <center>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%234285F4&ctz=Asia%2FTbilisi&showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=MzJ0aHNjaG9vbEBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=a2EuZ2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" frameborder="0" scrolling="no"></iframe>
+   </center>
+    </div>
+ 
+      
+</body>
+</html>
