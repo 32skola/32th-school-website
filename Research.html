@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>შიდასასკოლო კვლევა</title>
+    <style>
+        form {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+
+button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0062cc;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <form action="https://formspree.io/f/xeqwnvrz" method="POST">
+        <label for="name">სახელი/გვარი:</label>
+        <input type="text" name="Name" id="name" required>
+        <br>
+        <label for="email">ელ.ფოსტა:</label>
+        <input type="email" name="Email" id="email" required>
+        <br>
+        <label for="phone">ტელ.ნომერი:</label>
+        <input type="text" name="Phone Number" id="phone" required>
+        <br>
+        <label for="age">ასაკი:</label>
+        <input type="number" name="Age" id="age" required>
+        <br>
+        <label for="message">თქვენი 3 - ფავორიტი საგანი:</label>
+        <textarea name="Message" id="message" required></textarea>
+        <br>
+        <button type="submit">გაგზავნა</button>
+      </form>
+      
+</body>
+</html>
